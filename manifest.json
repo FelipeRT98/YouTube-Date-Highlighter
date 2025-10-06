@@ -1,8 +1,8 @@
 {
     "name": "YouTube Date Highlighter",
     "version": "1.0",
-    "manifest_version": 3,
-    "author": "Me",
+    "manifest_version": 3,  
+    "author": "Felipe R.T.",
     "description": "This browser extension highlights the upload dates of YouTube videos with colors based on their age.",
     "action": {
         "default_popup": "index.html",
@@ -14,7 +14,7 @@
         "scripting"
     ],
     "host_permissions": [
-        "<all_urls>"
+        "*://*.youtube.com/*"
     ],
     "content_scripts": [
         {
