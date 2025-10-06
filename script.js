@@ -1,3 +1,12 @@
+const manifest = chrome.runtime.getManifest();
+
+const version = manifest.version;
+
+// Insert into HTML
+document.getElementById("version").innerText = `Version: ${version}`;
+
+//------------------------------------------------------------------------------
+
 const minYear = document.getElementById("minYear");
 const maxYear = document.getElementById("maxYear");
 
