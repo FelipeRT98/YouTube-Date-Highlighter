@@ -13,26 +13,31 @@
 A browser extension for Chromium-based browsers that highlights YouTube video upload dates.
 Each date is color-coded based on the video’s age, making it easier to identify older or newer content.
 
+![good.png](.github/good.png)
+
 ## Characteristics
 
 - **Chromium-based**: Works on Google Chrome, Microsoft Edge, Opera, Brave, and other Chromium-based browsers.
 - **English-only**
 - **Customizable**: Adjust the colors and year range to fit your preferences.
+- **Comments**: The dates of the comments are also highlighted
+- **Streams**: The dates of the streams are also highlighted
 
 ## Why
 
->AI miniature
+> AI miniature
 
->3 months ago
+> 3 months ago
 
->😞
+> 😞
 
 More and more, YouTube is being flooded with AI content.
 I wanted a way to highlight the older videos.
 
 ## Usage instructions
 
-Drag and drop the .crx file into the extension page of your browser
+1. Drag and drop the .crx file into the extension page of your browser.
+2. Refresh YouTube (CTRL + SHIFT + R)
 
 ## Build
 
