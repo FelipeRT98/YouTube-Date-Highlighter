@@ -36,7 +36,7 @@ I wanted a way to highlight the older videos.
 
 ## Usage instructions
 
-1. Download the .zip file from the latest releases and unzip it
+1. Download the compressed file from the latest release and extract it
 2. Drag and drop the .crx file into the extension page of your browser.
 3. Refresh YouTube (CTRL + SHIFT + R)
 
