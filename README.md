@@ -1,6 +1,10 @@
 # Drops
 
+<<<<<<< HEAD
 ![YouTube_Date_Highlighter.png](.github/YouTube_Date_Highlighter.png)
+=======
+![YouTube Date Highlighter.png](.github/YouTube Date Highlighter.png)
+>>>>>>> d9aedbf818b5701e90116a7b07ffa8869b968eeb
 
 ![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
@@ -21,11 +25,19 @@ Each date is color-coded based on the video’s age, making it easier to identif
 
 ## Why
 
+<<<<<<< HEAD
 > AI miniature
 
 > 3 months ago
 
 > 😞
+=======
+>AI miniature
+
+>3 months ago
+
+>😞
+>>>>>>> d9aedbf818b5701e90116a7b07ffa8869b968eeb
 
 More and more, YouTube is being flooded with AI content.
 I wanted a way to highlight the older videos.
