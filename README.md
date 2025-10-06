@@ -1,4 +1,4 @@
-# Drops
+# YouTube Date Highlighter
 
 ![icon128.png](.github/icon128.png)
 
