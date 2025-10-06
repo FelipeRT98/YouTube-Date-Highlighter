@@ -1,6 +1,6 @@
 # Drops
 
-![YouTube_Date_Highlighter.png](.github/YouTube_Date_Highlighter.png)
+![icon128.png](.github/icon128.png)
 
 ![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
