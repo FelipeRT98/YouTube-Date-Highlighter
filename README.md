@@ -37,8 +37,10 @@ I wanted a way to highlight the older videos.
 ## Usage instructions
 
 1. Download the compressed file from the latest release and extract it
-2. Drag and drop the .crx file into the extension page of your browser.
-3. Refresh YouTube (CTRL + SHIFT + R)
+2. Go to the extension page of your browser
+3. Enable Developer mode
+4. Click "Load unpacked" and select the folder you extracted
+5. Refresh YouTube (CTRL + SHIFT + R)
 
 ## Build
 
