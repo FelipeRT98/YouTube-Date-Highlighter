@@ -43,20 +43,8 @@ https://microsoftedge.microsoft.com/addons/detail/youtube-date-highlighter/apnan
 
 OR
 
-1. Download the compressed file from the latest release and extract it
+1. Clone this repository
 2. Go to the extension page of your browser
 3. Enable Developer mode
-4. Click "Load unpacked" and select the folder you extracted
+4. Click "Load unpacked" and select this repository folder
 5. Refresh YouTube (CTRL + SHIFT + R)
-
-## Build
-
-1. Go to the extension page of your browser
-
-2. Enable Developer mode
-
-3. Click Pack extension
-
-4. Choose your extension folder
-
-5. A .crx and a .pem file are created
