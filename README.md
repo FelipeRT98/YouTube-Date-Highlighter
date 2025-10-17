@@ -13,7 +13,9 @@
 A browser extension for Chromium-based browsers that highlights YouTube video upload dates.
 Each date is color-coded based on the video’s age, making it easier to identify older or newer content.
 
-![good.png](.github/good.png)
+| Example | Configuration |
+|-------------------------------|---------------------------------|
+| ![good.png](.github/good.png) | ![index.png](.github/index.png) |
 
 ## Characteristics
 
@@ -36,20 +38,13 @@ I wanted a way to highlight the older videos.
 
 ## Usage instructions
 
-1. Download the compressed file from the latest release and extract it
+Get it from:
+https://microsoftedge.microsoft.com/addons/detail/youtube-date-highlighter/apnannejjolknbkjdmchdonohcmddgaa
+
+OR
+
+1. Clone this repository
 2. Go to the extension page of your browser
 3. Enable Developer mode
-4. Click "Load unpacked" and select the folder you extracted
+4. Click "Load unpacked" and select this repository folder
 5. Refresh YouTube (CTRL + SHIFT + R)
-
-## Build
-
-1. Go to the extension page of your browser
-
-2. Enable Developer mode
-
-3. Click Pack extension
-
-4. Choose your extension folder
-
-5. A .crx and a .pem file are created
