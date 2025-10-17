@@ -18,7 +18,7 @@ Each date is color-coded based on the video’s age, making it easier to identif
 ## Characteristics
 
 - **Chromium-based**: Works on Google Chrome, Microsoft Edge, Opera, Brave, and other Chromium-based browsers.
-- **English-only**
+- **Supported YouTube languages**: English (US), Español (España), Japanese
 - **Customizable**: Adjust the colors and year range to fit your preferences.
 - **Comments**: The dates of the comments are also highlighted
 - **Streams**: The dates of the streams are also highlighted
