@@ -39,7 +39,8 @@ I wanted a way to highlight the older videos.
 ## Usage instructions
 
 Get it from:
-https://microsoftedge.microsoft.com/addons/detail/youtube-date-highlighter/apnannejjolknbkjdmchdonohcmddgaa
+- **Microsoft Edge Add-ons**: https://microsoftedge.microsoft.com/addons/detail/youtube-date-highlighter/apnannejjolknbkjdmchdonohcmddgaa
+- **Chrome Web Store**: https://chromewebstore.google.com/detail/youtube-date-highlighter/npnmbmchleenlbjibedflimjkljchopg
 
 OR
 
