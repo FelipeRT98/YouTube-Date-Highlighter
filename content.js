@@ -19,11 +19,11 @@ window.onload = () => {
   // HIGHLIGHT
   function highlightTimeTexts() {
     const elements = document.querySelectorAll(
-      "div.yt-content-metadata-view-model__metadata-row span:nth-of-type(3)," + // Home
+      "yt-content-metadata-view-model > div > span:last-of-type," + // Home
         "div#metadata-line span:nth-of-type(2)," + // Channel
         "yt-formatted-string#info span:nth-of-type(3)," + // Video
         "yt-formatted-string#video-info span:nth-of-type(3)," + // Playlist
-        "span#published-time-text a" // Comment
+        "span#published-time-text a", // Comment
     );
 
     elements.forEach((el) => {
@@ -155,7 +155,7 @@ window.onload = () => {
       minYearColor = result.minYearColor || { r: 0, g: 255, b: 0 };
       midYearColor = result.midYearColor || { r: 255, g: 255, b: 0 };
       maxYearColor = result.maxYearColor || { r: 255, g: 0, b: 0 };
-    }
+    },
   );
 
   function interpolateYearColor(year, minYear, maxYear) {
