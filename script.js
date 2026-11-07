@@ -80,7 +80,7 @@ for (const key in colorDefaults) {
 
   // Reset button
   const resetBtn = document.getElementById(
-    `reset${key[0].toUpperCase()}${key.slice(1)}`
+    `reset${key[0].toUpperCase()}${key.slice(1)}`,
   );
   if (resetBtn) {
     resetBtn.addEventListener("click", () => {
@@ -199,29 +199,6 @@ function checkURLMatch() {
   if (currentURLOrigin == "https://www.youtube.com") {
     document.getElementById("urlMatch").innerText =
       "🟢The format is applied to this site";
-
-    // Inject and run content.js on current tab
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-      const tabId = tabs[0].id;
-
-      chrome.scripting.executeScript(
-        {
-          target: { tabId: tabId },
-          files: ["content.js"],
-        },
-        () => {
-          chrome.tabs.sendMessage(
-            tabId,
-            { action: "findTimeTexts" },
-            (response) => {
-              if (response && response.results) {
-                console.log("Found texts:", response.results);
-              }
-            }
-          );
-        }
-      );
-    });
   } else {
     document.getElementById("urlMatch").innerText =
       "❌The format is not applied to this site";

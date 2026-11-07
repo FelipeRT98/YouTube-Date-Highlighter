@@ -18,181 +18,132 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YouTube Date Highlighter</title>
-    <style>
-      html,
-      body {
-        margin: 0;
-        padding: 1ch;
-        width: max-content;
-        height: max-content;
-        white-space: nowrap;
-      }
 
-      .inputYear {
-        width: 7ch;
-        max-width: 7ch;
-        min-width: 7ch;
-        box-sizing: content-box; /* makes width count only the text area */
-      }
-      .inputColor {
-        width: 6ch;
-        max-width: 6ch;
-        min-width: 6ch;
-        box-sizing: content-box; /* makes width count only the text area */
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Date Highlighter</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 1ch;
+      width: max-content;
+      height: max-content;
+      white-space: nowrap;
+    }
 
-      #minYearColorRow,
-      #midYearColorRow,
-      #maxYearColorRow {
-        color: white;
-        font-weight: bold;
-        padding: 2px 4px;
-        border-radius: 4px;
-        text-shadow: rgb(0, 0, 0) -1px -1px 0px, rgb(0, 0, 0) 1px -1px 0px,
-          rgb(0, 0, 0) -1px 1px 0px, rgb(0, 0, 0) 1px 1px 0px;
-      }
-    </style>
-  </head>
-  <body>
-    <p id="currentURLOrigin">Loading...</p>
+    .inputYear {
+      width: 7ch;
+      max-width: 7ch;
+      min-width: 7ch;
+      box-sizing: content-box;
+      /* makes width count only the text area */
+    }
 
-    <p id="urlMatch">Loading...</p>
+    .inputColor {
+      width: 6ch;
+      max-width: 6ch;
+      min-width: 6ch;
+      box-sizing: content-box;
+      /* makes width count only the text area */
+    }
 
-    <hr />
+    #minYearColorRow,
+    #midYearColorRow,
+    #maxYearColorRow {
+      color: white;
+      font-weight: bold;
+      padding: 2px 4px;
+      border-radius: 4px;
+      text-shadow: rgb(0, 0, 0) -1px -1px 0px, rgb(0, 0, 0) 1px -1px 0px,
+        rgb(0, 0, 0) -1px 1px 0px, rgb(0, 0, 0) 1px 1px 0px;
+    }
+  </style>
+</head>
 
-    <table>
-      <tr>
-        <td>Min. Year</td>
-        <td>
-          <input class="inputYear" type="number" id="minYear" name="minYear" />
-        </td>
-        <td><button id="resetMinYear">Reset</button></td>
-      </tr>
-      <tr>
-        <td>Max. Year</td>
-        <td>
-          <input class="inputYear" type="number" id="maxYear" name="maxYear" />
-        </td>
-        <td><button id="resetMaxYear">Reset</button></td>
-      </tr>
-      <tr>
-        <td><br /></td>
-      </tr>
-      <tr id="minYearColorRow">
-        <td>Min. Year Color</td>
-        <td>
-          R:
-          <input
-            class="inputColor"
-            type="number"
-            id="minYearColorR"
-            name="minYearColorR"
-          />
-          G:
-          <input
-            class="inputColor"
-            type="number"
-            id="minYearColorG"
-            name="minYearColorG"
-          />
-          B:
-          <input
-            class="inputColor"
-            type="number"
-            id="minYearColorB"
-            name="minYearColorB"
-          />
-        </td>
-        <td>
-          <button id="resetMinYearColor">Reset</button>
-        </td>
-      </tr>
-      <tr id="midYearColorRow">
-        <td>Mid. Year Color</td>
-        <td>
-          R:
-          <input
-            class="inputColor"
-            type="number"
-            id="midYearColorR"
-            name="midYearColorR"
-          />
-          G:
-          <input
-            class="inputColor"
-            type="number"
-            id="midYearColorG"
-            name="midYearColorG"
-          />
-          B:
-          <input
-            class="inputColor"
-            type="number"
-            id="midYearColorB"
-            name="midYearColorB"
-          />
-        </td>
-        <td>
-          <button id="resetMidYearColor">Reset</button>
-        </td>
-      </tr>
-      <tr id="maxYearColorRow">
-        <td>Max. Year Color</td>
-        <td>
-          R:
-          <input
-            class="inputColor"
-            type="number"
-            id="maxYearColorR"
-            name="maxYearColorR"
-          />
-          G:
-          <input
-            class="inputColor"
-            type="number"
-            id="maxYearColorG"
-            name="maxYearColorG"
-          />
-          B:
-          <input
-            class="inputColor"
-            type="number"
-            id="maxYearColorB"
-            name="maxYearColorB"
-          />
-        </td>
-        <td>
-          <button id="resetMaxYearColor">Reset</button>
-        </td>
-      </tr>
-    </table>
+<body>
+  <p id="currentURLOrigin">Loading...</p>
 
-    <hr />
+  <p id="urlMatch">Loading...</p>
 
-    <p>
-      <a
-        href="https://github.com/FelipeRT98/YouTube-Date-Highlighter"
-        target="_blank"
-        rel="noopener noreferrer"
-        >https://github.com/FelipeRT98/YouTube-Date-Highlighter</a
-      >
-    </p>
+  <hr />
 
-    <p>
-      <a
-        href="https://github.com/FelipeRT98/YouTube-Date-Highlighter/tree/master?tab=GPL-3.0-1-ov-file#readme"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Copyright (C) 2025 Felipe R.T.</a
-      >
-    </p>
+  <table>
+    <tr>
+      <td>Min. Year</td>
+      <td>
+        <input class="inputYear" type="number" id="minYear" name="minYear" />
+      </td>
+      <td><button id="resetMinYear">Reset</button></td>
+    </tr>
+    <tr>
+      <td>Max. Year</td>
+      <td>
+        <input class="inputYear" type="number" id="maxYear" name="maxYear" />
+      </td>
+      <td><button id="resetMaxYear">Reset</button></td>
+    </tr>
+    <tr>
+      <td><br /></td>
+    </tr>
+    <tr id="minYearColorRow">
+      <td>Min. Year Color</td>
+      <td>
+        R:
+        <input class="inputColor" type="number" id="minYearColorR" name="minYearColorR" />
+        G:
+        <input class="inputColor" type="number" id="minYearColorG" name="minYearColorG" />
+        B:
+        <input class="inputColor" type="number" id="minYearColorB" name="minYearColorB" />
+      </td>
+      <td>
+        <button id="resetMinYearColor">Reset</button>
+      </td>
+    </tr>
+    <tr id="midYearColorRow">
+      <td>Mid. Year Color</td>
+      <td>
+        R:
+        <input class="inputColor" type="number" id="midYearColorR" name="midYearColorR" />
+        G:
+        <input class="inputColor" type="number" id="midYearColorG" name="midYearColorG" />
+        B:
+        <input class="inputColor" type="number" id="midYearColorB" name="midYearColorB" />
+      </td>
+      <td>
+        <button id="resetMidYearColor">Reset</button>
+      </td>
+    </tr>
+    <tr id="maxYearColorRow">
+      <td>Max. Year Color</td>
+      <td>
+        R:
+        <input class="inputColor" type="number" id="maxYearColorR" name="maxYearColorR" />
+        G:
+        <input class="inputColor" type="number" id="maxYearColorG" name="maxYearColorG" />
+        B:
+        <input class="inputColor" type="number" id="maxYearColorB" name="maxYearColorB" />
+      </td>
+      <td>
+        <button id="resetMaxYearColor">Reset</button>
+      </td>
+    </tr>
+  </table>
 
-    <p id="version">Loading...</p>
+  <hr />
 
-    <script src="script.js"></script>
-  </body>
+  <p>
+    <a href="https://github.com/FelipeRT98/YouTube-Date-Highlighter" target="_blank" rel="noopener noreferrer">https://github.com/FelipeRT98/YouTube-Date-Highlighter</a>
+  </p>
+
+  <p>
+    <a href="https://github.com/FelipeRT98/YouTube-Date-Highlighter/tree/master?tab=GPL-3.0-1-ov-file#readme" target="_blank" rel="noopener noreferrer">Copyright (C) 2025 Felipe R.T.</a>
+  </p>
+
+  <p id="version">Loading...</p>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
